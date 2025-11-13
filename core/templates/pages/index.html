@@ -96,21 +96,25 @@
             </div>
 
             <div class="new-conteiner">
-                {% for item in cases %}
-                <div class="news">
+                {% for item in articles %}
+                <a href="{% url 'core:article_detail' item.slug %}" class="news">
                     <div class="new-block">
-                        <img src="{% static 'assets/img/земля.svg' %}" alt="">
+                        {% if item.image %}
+                            <img src="{{ item.image.url }}" alt="">
+                        {% else %}
+                            <img src="{% static 'assets/img/земля.svg' %}" alt="">
+                        {% endif %}
                         <div class="new-content">
                             <div class="new-content-text">
                                 <h6>Мероприятия</h6>
-                                <h6>15 октября 2018</h6>
+                                <h6>{{ item.created_at }}</h6>
                             </div>
-                            <h2>{{ item.title }}</h2>
-                            <h3>{{ item.description }}</h3>
+                            <h2>{{ item.name }}</h2>
+                            <h3>{{ item.content|truncatechars_html:156|safe }}</h3>
                             <a href="page.html"><button class="btn">читать</button></a>
                         </div>
                     </div>
-                </div>
+                </a>
                 {% endfor %}
             </div>
         </div>

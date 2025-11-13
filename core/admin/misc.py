@@ -53,5 +53,3 @@ class TextPageAdmin(admin.ModelAdmin):
 admin.site.register(models.TelegramBotCredentials, admin.ModelAdmin)
 
 admin.site.register(models.Partnership, admin.ModelAdmin)
-
-admin.site.register(models.Cases, admin.ModelAdmin)

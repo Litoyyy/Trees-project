@@ -12,6 +12,7 @@ app_name = 'core'
 
 urlpatterns = [
     path('', views.IndexView.as_view(), name="index"),
+    path('case/<slug:article_slug>/', views.ArticleDetailView.as_view(), name='article_detail'),
     path('page/<slug:page_slug>/', views.GenericTextPageView.as_view(), name="text_page"),
 
     path('sitemap.xml', views.sitemap, {'sitemaps': sitemaps}),

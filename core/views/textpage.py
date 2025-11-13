@@ -26,7 +26,7 @@ class IndexView(mixins.TextPageMixin, generic.TemplateView):
 
         context.update({
             "partnership": models.Partnership.objects.all()[:6],
-            "cases": models.Cases.objects.all()[:6],
+            "articles": models.Article.objects.all()[:6],
         })
 
         return context

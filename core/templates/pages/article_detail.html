@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <header class="conteiner">
+        <img src="{% static 'assets/img/logo.svg' %}" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Формы</a></li>
+                <li><a href="#">Организаторы</a></li>
+                <li><a href="#">Истории</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="baner">
+        {% if object.image %}
+            <img src="{{ object.image.url }}" alt="">
+        {% else %}
+            <img src="{% static 'assets/img/земля.svg' %}" alt="">
+        {% endif %}
+    </div>
+
+    <div class="history container">
+        <h2>{{ object.name }}</h2>
+        <div class="text-history">
+            {{ object.content|safe }}
+        </div>
+    </div>
+    
+    <div class="contacts">
+        <div class="contacts-content">
+            <div class="contacts-form conteiner">
+                <h1>Свяжитесь с нами и получите расчет стоимости проекта в течении суток</h1>
+                <input type="text" placeholder="Ваше имя"><br>
+                <input type="tel" placeholder="+7 (___) ___-__-__"><br>
+                <input type="email" placeholder="e-mail"><br>
+                <input type="text" placeholder="О проекте" class="project"><br>
+                <div class="nizhniya">
+                    <div class="vstavit">
+                        <img src="{% static 'assets/img/Vector.svg' %}" alt="">
+                        <h2>Вставить файл</h2>
+                    </div>
+                    <button class="btn">Написать</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="podval">
+        <div class="podval-conteiner">
+            <div class="text1">
+                <div class="podval-content">
+                    <img src="{% static 'assets/img/logo white.svg' %}" alt="">
+                </div>
+            
+            
+                <div class="podval-content">
+                    
+                    <h1>Ул. Шоковая 63а</h1>
+                </div>
+            </div>
+            <div class="text1">
+                <div class="podval-politica">
+                    
+                    <h2>Политика конфиденциальности</h2>
+                    <h2>@ 2012 - 2025 ДеревьЯ</h2>
+                </div>
+            
+            
+                <div class="podval-content-contact">
+                    <div class="podval-contact">
+                        <img src="{% static 'assets/img/icon phone.svg' %}" alt="">
+                        <h3>+7 (999) 123 45-67</h3>
+                    </div>
+                    <div class="podval-contact">
+                        <img src="{% static 'assets/img/icon email.svg' %}" alt="">
+                        <h3>dereviya@gmail.com</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
