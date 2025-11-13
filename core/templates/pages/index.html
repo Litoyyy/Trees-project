@@ -1,0 +1,331 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="wrapper">
+    <body>
+        <header class="conteiner">
+            <img src="{% static 'assets/img/logo.svg' %}" alt="">
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Формы</a></li>
+                    <li><a href="#">Организаторы</a></li>
+                    <li><a href="#">Истории</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <div class="hero"> 
+        <img src="{% static 'assets/img/фото огорода в саженцами хиро.svg' %}" alt="">
+        <div class="text-hero">
+            <h2>«Покупай саженцы — сажай лес. Лес, в который можно вернуться».</h2>
+            <p>Создай зелёное наследие для будущих поколений.</p>
+            <button class="btn">Заказать</button>
+        </div>
+    </div>
+
+    {{ partnership }}
+    {% for item in partnership %}
+        {{ item.title }}
+    {% endfor %}1111
+        <div class="forma conteiner">
+            <h1>Формы участия</h1>
+
+            <div class="form-content">
+                <div class="form-card">
+                    <img src="{% static 'assets/img/папа и отец.svg' %}" alt="">
+                    <div class="from-card-text">
+                        <h1>Посади дерево — стань мужчиной</h1>
+                        <h2>Один мальчик сажает одно дерево — и в этот момент у него появляется что-то своё.</h2>
+                        <button class="btn">Записаться на посвящение</button>
+                    </div>
+                </div>
+
+
+                <div class="form-card">
+                    <img src="{% static 'assets/img/свадьба.svg' %}" alt="">
+                    <div class="from-card-text">
+                        <h1>Свадебное дерево</h1>
+                        <h2>Свадьба заканчивается, фото блекнут, торт съели и забыли. Но если в день росписи вы сажаете своё дерево — память становится живой.</h2>
+                        <button class="btn">Посадить семейное дерево</button>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <img src="{% static 'assets/img/военные.svg' %}" alt="">
+                    <div class="from-card-text">
+                        <h1>Роща славы</h1>
+                        <h2>Есть вещи, которые словами не лечатся.Когда отец на фронте. Когда его уже нет. Когда ребёнку нужно во что-то упереться, кроме пустоты.</h2>
+                        <button class="btn">Посадить дерево в Роще славы</button>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="stic">
+            <div class="static-content">
+                <div class="static-text">
+                    <h1>8,9</h1>
+                    <h2>млн га лесных площадей ежегодно выгорает в России</h2>
+                </div>
+                <div class="static-text">
+                    <h1>200</h1>
+                    <h2>млн кубометров лесов вырубается</h2>
+                </div>
+                <div class="static-text">
+                    <h1>2,5+</h1>
+                    <h2>тысяч животных погибает при пожара в леса</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="step conteiner">
+            <h1>Как это работает?</h1>
+            <div class="step-content">
+                <div class="step-text">
+                    <img src="{% static 'assets/img/icon1.svg' %}" alt="">
+                    <h1>Нажмите «Вход в личный кабинет» и зарегистрируйтесь в личном кабинете.</h1>
+                </div>
+                <div class="step-text">
+                    <img src="{% static 'assets/img/icon2.svg' %}" alt="">
+                    <h1>Укажите все реквизиты компании и выберите удобную валюту в личном кабинете</h1>
+                </div>
+                <div class="step-text">
+                    <img src="{% static 'assets/img/icon3.svg' %}" alt="">
+                    <h1>Выберите форму договора в разделе «Мой баланс». Договор и счет будут сформированы автоматически.</h1>
+                </div>
+                <div class="step-text">
+                    <img src="{% static 'assets/img/icon4.svg' %}" alt="">
+                    <h1>Произведите оплату. После того, как пройдет оплата, ваш баланс будет пополнен в течение 24 часов.</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteiner new">
+            <div class="new-header">
+                <h1>Истории посадок</h1>
+            </div>
+
+            <div class="new-conteiner">
+                <div class="news">
+                    <div class="new-block">
+                        <img src="{% static 'assets/img/земля.svg' %}" alt="">
+                        <div class="new-content">
+                            <div class="new-content-text">
+                                <h6>Мероприятия</h6>
+                                <h6>15 октября 2018</h6>
+                            </div>
+                            <h2>Проект успешно провёл первую крупную акцию по восстановлению подмосковного леса</h2>
+                            <h3>Осень 2018 года стала важной вехой для нашего фонда. Волонтёры со всей Москвы и Подмосковья отправились в Одинцовский район, чтобы возродить утраченный лесной массив....</h3>
+                            <a href="page.html"><button class="btn">читать</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news">
+                    <div class="new-block">
+                        <img src="{% static 'assets/img/[tkg.svg' %}" alt="">
+                        <div class="new-content">
+                            <div class="new-content-text">
+                                <h6>Мероприятия</h6>
+                                <h6>5 мая 2021</h6>
+                            </div>
+                            <h2>Экологический проект расширился, посадив новый лес в Карелии</h2>
+                            <h3>Весной 2021 года инициативная группа предприняла амбициозную поездку в Карелию, поставив себе новую цель — посадить полноценный молодой лес на берегу красивого озера Имандра....</h3>
+                            <a href="page.html"><button class="btn">читать</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="calculator conteiner">
+            <div class="calculator-content">
+                <h1>Калькулятор</h1>
+                <div class="calculator-block">
+                    <h2>Калькулятор поможет вычесть сумму на гектары и саженцы</h2>
+                    <div class="calculator-text">
+                        <div class="pomogite">
+                            <div class="calculator-col">
+                                <h3>Саженцы</h3>
+                                <input type="text" placeholder="Введите количество">
+                            </div>
+                            <div class="calculator-col">
+                                <h3>Гектары</h3>
+                                <input type="text" placeholder="Введите в м²">
+                            </div>
+                        </div>
+                        <div class="calculator-summa">
+                            <h3>Сумма</h3>
+                            <input type="text" placeholder="Здесь будет сумма">
+                            <button class="btn">Считать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conteiner face">
+            <h1>Организаторы</h1>
+
+            <div class="face-conteiner">
+                <div class="faces">
+                    <div class="face-block">
+                        <img src="{% static 'assets/img/павел.svg' %}" alt="">
+                        <div class="face-content">
+                            <div class="face-content-text">
+                                <h2>Павел Подвохов</h2>
+                                <h3>Лидер фонда</h3>
+                            </div>
+                            <h5>Руководит всеми направлениями деятельности, координирует работу команды.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="faces">
+                    <div class="face-block">
+                        <img src="{% static 'assets/img/алина.svg' %}" alt="">
+                        <div class="face-content">
+                            <div class="face-content-text">
+                                <h2>Мария Подушкина</h2>
+                                <h3>Солидер фонда</h3>
+                            </div>
+                            <h5>Занимается привлечением партнёров и поддержкой инициативы.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="faces">
+                    <div class="face-block">
+                        <img src="{% static 'assets/img/девочка.svg' %}" alt="">
+                        <div class="face-content">
+                            <div class="face-content-text">
+                                <h2>Катерина Серва</h2>
+                                <h3>Координатор</h3>
+                            </div>
+                            <h5>Участвует непосредственно в посадках и работе с волонтёрскими группами.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="faces">
+                    <div class="face-block">
+                        <img src="{% static 'assets/img/jennie.svg' %}" alt="">
+                        <div class="face-content">
+                            <div class="face-content-text">
+                                <h2>Дженни Ким</h2>
+                                <h3>к координатор</h3>
+                            </div>
+                            <h5>Отвечает за разработку планов мероприятий и взаимодействие с местными властями.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="faces">
+                    <div class="face-block">
+                        <img src="{% static 'assets/img/муж алины.png' %}" alt="">
+                        <div class="face-content">
+                            <div class="face-content-text">
+                                <h2>Чон Чонгук</h2>
+                                <h3>Документооборот</h3>
+                            </div>
+                            <h5>Управляет бюджетом и финансовыми потоками организации.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="partneri">
+            <img src="{% static 'assets/img/молодая гвардия.svg' %}" alt="">
+            <img src="{% static 'assets/img/птица.svg' %}" alt="">
+            <img src="{% static 'assets/img/детский мир.svg' %}" alt="">
+            <img src="{% static 'assets/img/первые.svg' %}" alt="">
+            <img src="{% static 'assets/img/азбукавкуса.svg' %}" alt="">
+            <img src="{% static 'assets/img/тспк.svg' %}" alt="">
+            <img src="{% static 'assets/img/магнит.svg' %}" alt="">
+        </div>
+        <div class="partneri">
+            <img src="{% static 'assets/img/йота.svg' %}" alt="">
+            <img src="{% static 'assets/img/газпром.svg' %}" alt="">
+            <img src="{% static 'assets/img/ростсайт1.svg' %}" alt="">
+            <img src="{% static 'assets/img/билайн.svg' %}" alt="">
+            <img src="{% static 'assets/img/фпибанк1.svg' %}" alt="">
+            <img src="{% static 'assets/img/почтароссии.svg' %}" alt="">
+            <img src="{% static 'assets/img/черноголовка.svg' %}" alt="">
+        </div>
+
+        <div class="galery conteiner">
+            <div class="galery-content">
+                <h1>Наша галерея</h1>
+                <div class="galery-photo">
+                    <div class="galery-col">
+                        <img src="{% static 'assets/img/galery 1.svg' %}" alt="">
+                        <img src="{% static 'assets/img/galery 2.svg' %}" alt="" class="col1">
+                    </div>
+                    <div class="galery-col">
+                        <img src="{% static 'assets/img/galery 3.svg' %}" alt="">
+                        <img src="{% static 'assets/img/galery 4.svg' %}" alt="" class="col1">
+                    </div>
+                    <img src="{% static 'assets/img/galery 5.svg' %}" alt="">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="contacts">
+            <div class="contacts-content">
+                <div class="contacts-form conteiner">
+                    <h1>Свяжитесь с нами и получите расчет стоимости проекта в течении суток</h1>
+                    <input type="text" placeholder="Ваше имя"><br>
+                    <input type="tel" placeholder="+7 (___) ___-__-__"><br>
+                    <input type="email" placeholder="e-mail"><br>
+                    <input type="text" placeholder="О проекте" class="project"><br>
+                    <div class="nizhniya">
+                        <div class="vstavit">
+                            <img src="{% static 'assets/img/Vector.svg' %}" alt="">
+                            <h2>Вставить файл</h2>
+                        </div>
+                        <button class="btn">Написать</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="podval">
+            <div class="podval-conteiner">
+                <div class="text1">
+                    <div class="podval-content">
+                        <img src="{% static 'assets/img/logo white.svg' %}" alt="">
+                    </div>
+                
+                
+                    <div class="podval-content">
+                        
+                        <h1>Ул. Шоковая 63а</h1>
+                    </div>
+                </div>
+                <div class="text1">
+                    <div class="podval-politica">
+                        
+                        <h2>Политика конфиденциальности</h2>
+                        <h2>@ 2012 - 2025 ДеревьЯ</h2>
+                    </div>
+                
+                
+                    <div class="podval-content-contact">
+                        <div class="podval-contact">
+                            <img src="{% static 'assets/img/icon phone.svg' %}" alt="">
+                            <h3>+7 (999) 123 45-67</h3>
+                        </div>
+                        <div class="podval-contact">
+                            <img src="{% static 'assets/img/icon email.svg' %}" alt="">
+                            <h3>dereviya@gmail.com</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</div>
+{% endblock %}

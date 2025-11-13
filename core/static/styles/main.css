@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+  *{
+     margin: 0px;
+     padding: 0px;
+   }
+
+  body{
+      font-family: "Exo 2", sans-serif;
+      font-weight: 400;
+      color: black;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+  img{
+      max-width: 100%;
+    }
+
+    .wrapper{
+     background: #ffff;
+     width: 100%;
+    }
+
+    .conteiner{
+      width: 1500px;
+      margin: 0 auto;
+      
+    }
+
+    header{
+        padding: 16px 210px;
+    }
+
+    header nav{
+        float: right;
+        width: 30%;
+    }
+
+    header nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    header nav ul li{
+        display: inline-block;
+    }
+
+    header nav ul li a{color: #212121;}
+
+    
+.hero {
+    position: relative; 
+    width: 100%; 
+    height: 470px;
+    overflow: hidden;
+    background-image: url('img/фото огорода в саженцами хиро.svg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.hero img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.text-hero {
+    position: absolute; 
+    top: 50%;
+    right: 50%;
+    transform: translate(10%, -50%); 
+    color: white; 
+    text-align:left; 
+    line-height: 50px;
+}
+
+    .text-hero h1{
+        width: 442px;
+        color: #ffffff;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 110%;
+        margin: 24px 0;
+    }
+
+    .text-hero h2{
+        width: 442px;
+        color: #ffffff;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 110%;
+        margin: 24px 0;
+    }
+
+    .text-hero .btn{
+        background: #8BC53F;
+        padding: 12px 24px;
+        width: 142px;
+        height: 46px;
+        color: #ffff;
+        border-radius: 6px;
+        border: 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    
+    .forma h1{
+        color: #212121;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 110%;
+        margin: 24px 0;
+    }
+
+    .form-card{
+        width:456px ;
+        height:450px ;
+        border-radius: 6px;
+        border: 0;
+    }
+
+    .form-card h1{
+        width: 280px;
+        color: #212121;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 115%;
+        margin: 24px 0;
+    }
+
+    .form-card h2{
+        width: 396px;
+        color: #212121;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+        margin: 24px 0;
+    }
+
+    .from-card-text{
+        padding: 0px 30px;
+    }
+
+    .from-card-text .btn{
+        background: #8BC53F;
+        padding: 12px 24px;
+        width: 356px;
+        height: 46px;
+        color: #ffff;
+        border-radius: 6px;
+        border: 0;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .form-content{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .static-content{
+        margin: 48px 0;
+        background: #8BC53F;
+        height: 246px;
+        position: relative;
+        align-content: center;
+        padding: 0px 420px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .static-text{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .static-text h1{
+        color: #ffffff;
+        font-size: 80px;
+        font-weight: 600;
+        line-height: 110%;
+        margin-right: 10px;
+    }
+
+    .static-text h2{
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 115%;
+        width: 300px;
+    }
+
+    .step h1{
+        color: #212121;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 110%;
+        margin: 40px 0;
+    }
+
+    .step-content{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .step-text {
+        display: flex; /* Используем flexbox для выравнивания */
+        flex-direction: column; /* Устанавливаем направление по вертикали */
+        align-items: center; /* Выравниваем элементы по центру по горизонтали */
+        text-align: center; /* Выравниваем текст по центру */
+    }
+
+    .step-text img {
+        margin-bottom: 10px; /* Добавляем отступ снизу для изображения */
+    } 
+    
+    .step-text h1{
+        color: #B8B8B8;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 130%;
+        margin: 24px 0;
+        width: 342px;
+    }
+
+    
+
+    .news{
+        width: 696px;
+        border-radius: 16px;
+        
+    }
+
+    .new-content{
+        border-radius: 16px;
+        padding: 32px 48px;
+        width: 614px;
+        margin: 0px 0px;
+    }
+    
+    
+
+    .new-content-text{
+        display: flex;
+        margin-right: 12px;
+        width: 614px;
+    }
+
+    .new-content .btn{
+        background: #8BC53F;
+        padding: 12px 220px;
+        width:fit-content;
+        height: 46px;
+        color: #ffff;
+        border-radius: 6px;
+        border: 0;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .new-content-text h6{
+        color: #B8B8B8;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+        margin-right: 12px;
+    }
+
+    .new h1{
+        color: #212121;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 110%;
+        margin: 40px 0;
+    }
+
+    .new h2{
+        color: #212121;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 110%;
+        margin: 16px 0;
+        width: 518px;
+    }
+
+    .new h3{
+        color: #212121;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+        width: 518px;
+    }
+
+    .new-conteiner{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .new-conteiner .news{
+        margin: 0 16px;
+    }
+
+    .calculator-text{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+    }
+
+    .calculator-block{
+        
+       border: 2;
+       border-radius: 6px;
+       border-color: #B8B8B8;
+        padding: 24px 54px;
+        
+    }
+
+    .calculator-block h2{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 110%;
+        margin: 14px 0;
+    }
+
+    .pomogite{
+        display: flex;
+        
+    }
+
+    .calculator-col{
+        margin-right: 10px;
+    }
+
+    .calculator-col input{
+        padding: 12px 16px;
+        border-radius: 6px;
+        color: #B8B8B8;
+        border: 2;
+        border-color: #B8B8B8;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    .calculator-col h3{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 115%;
+        margin: 14px 0;
+        color: #B8B8B8;
+    }
+
+    .calculator-summa input{
+        margin-right: 42px;
+        padding: 12px 16px;
+        border-radius: 6px;
+        color: #B8B8B8;
+        border: 2;
+        border-color: #B8B8B8;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    .calculator-summa .btn{
+        background: #8BC53F;
+        padding: 12px 24px;
+        width: 356px;
+        height: 46px;
+        color: #ffff;
+        border-radius: 6px;
+        border: 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .calculator-summa h3{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 115%;
+        margin: 14px 0;
+    }
+
+    .calculator-content h1{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 110%;
+        margin: 40px 0;
+    }
+
+    .faces{
+        width: 342px;
+        height: 446px;
+        border-radius: 6px;
+    }
+
+    .face-content{
+        padding: 16px 24px;
+    }
+
+    .face h5{
+        width: 235px;
+        color: #B8B8B8;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    .face h1{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 110%;
+        margin: 40px 0;
+    }
+
+    .face h2{
+        color: #212121;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 115%;
+        
+    }
+
+    .face h3{
+        color: #B8B8B8;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 130%;
+        
+    }
+
+    .face-content-text{
+        margin-bottom: 12px;
+    }
+
+    .face-conteiner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .partneri{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 48px;
+    }
+
+    
+
+    .galery-photo{
+        display: flex;
+    }
+
+    .galery-col .col1{
+        margin-top: 64px;
+    }
+
+    .galery-content h1{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 110%;
+        margin: 40px 0;
+    }
+
+    .contacts-content{
+        margin: 48px 0;
+        background: #8BC53F;
+        height: 541px;
+        position: relative;
+        align-content: center;
+        align-items: center;
+        padding: 0px 420px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contacts-form{
+        background: #ffffff;
+        text-align: center;
+        height: 420px;
+        border-radius: 34px;
+        flex-direction: column;
+        padding: 24px 200px;
+    }
+
+    .contacts-form input{
+        width: 584px;
+        height: 38px;
+        padding: 0px 46px;
+        margin-top: 20px;
+        border-radius: 6px;
+        
+    }
+
+    .contacts-form .project {
+        height: 96px;
+        
+    }
+
+    .vstavit{
+        display: flex;
+        align-content: center;
+    }
+
+    .vstavit h2{
+        width: 120px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 130%;
+        align-content: center;
+    }
+
+    .vstavit img{
+        width: 24px;
+        height: 24px;
+        align-items: center;
+        margin-top: 10px;
+    
+    }
+
+    .nizhniya{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .contacts .btn{
+        background: #8BC53F;
+        padding: 12px 24px;
+        width: 144px;
+        height: 46px;
+        color: #ffff;
+        border-radius: 6px;
+        border: 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .contacts h1{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 110%;
+        
+    }
+
+    .podval{
+        background:#212121 ;
+        
+        padding: 48px 160px;
+    }
+    .text1{
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        
+    }
+
+    .podval-conteiner{
+        align-content: space-between;
+        height: 344px;
+        display: grid;
+        gap: 200px
+    }
+
+    .podval-content{
+        display: flex;
+        
+    }
+
+    .podval-contact{
+        display: flex;
+    }
+
+    .podval-contact h3{
+        margin-left: 20px;
+    }
+
+    .podval h1{
+        width: 320px;
+        color: #ffffff;
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 110%;
+    }
+
+    .podval h2{
+       
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    .podval h3{
+       
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 115%;
+    }

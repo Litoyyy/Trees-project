@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400; 500; 600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+accent #01B41C
+accent-subdued-64 #5CCF6E
+accent-subdued-32 #AEE7B6
+accent-subdued-16 #D6F3DB
+dark #212121
+dark-subdued-64 #5C5C5C
+dark-subdued-32 #B8B8B8
+dark-subdued-16 #DBDBDB
+*/
+
+/*стили для элементов и другие настройки*/
+body {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: #AEE7B6;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+.btn-border {
+    padding: 12px 24px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: #D6F3DB;
+    background-color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    color: #01B41C;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-border:hover {
+    border-color: #01B41C;
+}
+
+.btn-border:active {
+    background-color: #01B41C;
+    color: #ffffff;
+}
+
+.placeholder {
+    padding: 12px 16px;
+    color: #B8B8B8;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #DBDBDB;
+    transition: 0.2s ease-in-out;
+}
+
+.placeholder:active {
+    color: #212121;
+    border-color: #01B41C;
+}
+
+/*для мобилки
+
+body {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container {
+    width: 320px;
+}
+
+(кнопки просто мини по размеру)
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #AEE7B6;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+}
+
+.btn-border {
+    padding: 8px 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: #01B41C;
+    background-color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    color: #01B41C;
+}*/
+
+header{
+    padding: 16px 210px;
+}
+
+header nav{
+    float: right;
+    width: 30%;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{color: #212121;}
+
+.baner {
+    position: relative;
+    width: 100%;
+    height: 470px;
+    background-image: url('/img/папа и отец.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.baner img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.history {
+    padding: 60px 0px;
+}
+
+.text-history {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-indent: 10px;
+}
+
+.contacts-content{
+    margin: 48px 0;
+    background: #8BC53F;
+    height: 541px;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    padding: 0px 420px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-form{
+    background: #ffffff;
+    text-align: center;
+    height: 420px;
+    border-radius: 34px;
+    flex-direction: column;
+    padding: 24px 200px;
+}
+
+.contacts-form input{
+    width: 584px;
+    height: 38px;
+    padding: 0px 46px;
+    margin-top: 20px;
+    border-radius: 6px;
+    
+}
+
+.contacts-form .project {
+    height: 96px;
+    
+}
+
+.vstavit{
+    display: flex;
+    align-content: center;
+}
+
+.vstavit h2{
+    width: 120px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    align-content: center;
+}
+
+.vstavit img{
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.nizhniya{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contacts .btn{
+    background: #8BC53F;
+    padding: 12px 24px;
+    width: 144px;
+    height: 46px;
+    color: #ffff;
+    border-radius: 6px;
+    border: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contacts h1{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 110%;
+    
+}
+
+.podval{
+    background:#212121 ;
+    
+    padding: 48px 160px;
+}
+.text1{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    
+}
+
+.podval-conteiner{
+    align-content: space-between;
+    height: 344px;
+    display: grid;
+    gap: 200px
+}
+
+.podval-content{
+    display: flex;
+    
+}
+
+.podval-contact{
+    display: flex;
+}
+
+.podval-contact h3{
+    margin-left: 20px;
+}
+
+.podval h1{
+    width: 320px;
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.podval h2{
+    
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.podval h3{
+    
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 115%;
+}
