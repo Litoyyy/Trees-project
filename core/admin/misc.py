@@ -52,10 +52,6 @@ class TextPageAdmin(admin.ModelAdmin):
 
 admin.site.register(models.TelegramBotCredentials, admin.ModelAdmin)
 
-@admin.register(models.Partnership)
-class SiteSettingsAdmin(mixins.SingleObjectAdminMixin, admin.ModelAdmin):
-    pass
+admin.site.register(models.Partnership, admin.ModelAdmin)
 
-@admin.register(models.Cases)
-class SiteSettingsAdmin(mixins.SingleObjectAdminMixin, admin.ModelAdmin):
-    pass
+admin.site.register(models.Cases, admin.ModelAdmin)

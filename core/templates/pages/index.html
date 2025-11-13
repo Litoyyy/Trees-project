@@ -19,50 +19,35 @@
     <div class="hero"> 
         <img src="{% static 'assets/img/фото огорода в саженцами хиро.svg' %}" alt="">
         <div class="text-hero">
-            <h2>«Покупай саженцы — сажай лес. Лес, в который можно вернуться».</h2>
+            {% if site_settings.banner_text %}
+                <h2>{{ site_settings.banner_text }}</h2>
+            {% else %}
+                <h2>«Покупай саженцы — сажай лес. Лес, в который можно вернуться».</h2>
+            {% endif %}
             <p>Создай зелёное наследие для будущих поколений.</p>
             <button class="btn">Заказать</button>
         </div>
     </div>
-
-    {{ partnership }}
-    {% for item in partnership %}
-        {{ item.title }}
-    {% endfor %}1111
         <div class="forma conteiner">
             <h1>Формы участия</h1>
 
             <div class="form-content">
-                <div class="form-card">
-                    <img src="{% static 'assets/img/папа и отец.svg' %}" alt="">
-                    <div class="from-card-text">
-                        <h1>Посади дерево — стань мужчиной</h1>
-                        <h2>Один мальчик сажает одно дерево — и в этот момент у него появляется что-то своё.</h2>
-                        <button class="btn">Записаться на посвящение</button>
+                {% for item in partnership %}
+                    <div class="form-card">
+                        {% if item.image %}
+                            <img src="{{ item.image.url }}" alt="">
+                        {% else %}
+                            <img src="{% static 'assets/img/папа и отец.svg' %}" alt="">
+                        {% endif %}
+                        <div class="from-card-text">
+                            <h1>{{ item.title }}</h1>
+                            <h2>{{ item.description }}</h2>
+                            <button class="btn">{{ item.button_text }}</button>
+                        </div>
                     </div>
-                </div>
+                {% endfor %}
 
-
-                <div class="form-card">
-                    <img src="{% static 'assets/img/свадьба.svg' %}" alt="">
-                    <div class="from-card-text">
-                        <h1>Свадебное дерево</h1>
-                        <h2>Свадьба заканчивается, фото блекнут, торт съели и забыли. Но если в день росписи вы сажаете своё дерево — память становится живой.</h2>
-                        <button class="btn">Посадить семейное дерево</button>
-                    </div>
-                </div>
-
-                <div class="form-card">
-                    <img src="{% static 'assets/img/военные.svg' %}" alt="">
-                    <div class="from-card-text">
-                        <h1>Роща славы</h1>
-                        <h2>Есть вещи, которые словами не лечатся.Когда отец на фронте. Когда его уже нет. Когда ребёнку нужно во что-то упереться, кроме пустоты.</h2>
-                        <button class="btn">Посадить дерево в Роще славы</button>
-                    </div>
-                </div>
             </div>
-
-            
         </div>
 
         <div class="stic">
@@ -111,6 +96,7 @@
             </div>
 
             <div class="new-conteiner">
+                {% for item in cases %}
                 <div class="news">
                     <div class="new-block">
                         <img src="{% static 'assets/img/земля.svg' %}" alt="">
@@ -119,27 +105,13 @@
                                 <h6>Мероприятия</h6>
                                 <h6>15 октября 2018</h6>
                             </div>
-                            <h2>Проект успешно провёл первую крупную акцию по восстановлению подмосковного леса</h2>
-                            <h3>Осень 2018 года стала важной вехой для нашего фонда. Волонтёры со всей Москвы и Подмосковья отправились в Одинцовский район, чтобы возродить утраченный лесной массив....</h3>
+                            <h2>{{ item.title }}</h2>
+                            <h3>{{ item.description }}</h3>
                             <a href="page.html"><button class="btn">читать</button></a>
                         </div>
                     </div>
                 </div>
-
-                <div class="news">
-                    <div class="new-block">
-                        <img src="{% static 'assets/img/[tkg.svg' %}" alt="">
-                        <div class="new-content">
-                            <div class="new-content-text">
-                                <h6>Мероприятия</h6>
-                                <h6>5 мая 2021</h6>
-                            </div>
-                            <h2>Экологический проект расширился, посадив новый лес в Карелии</h2>
-                            <h3>Весной 2021 года инициативная группа предприняла амбициозную поездку в Карелию, поставив себе новую цель — посадить полноценный молодой лес на берегу красивого озера Имандра....</h3>
-                            <a href="page.html"><button class="btn">читать</button></a>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
         

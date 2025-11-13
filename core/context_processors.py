@@ -26,16 +26,6 @@ def company_contacts(request):
         "contacts": models.CompanyContacts.objects.first()
     }
 
-def partnership(request):
-    return {
-        "partnership": models.Partnership.objects.all()
-    }
-
-def cases(request):
-    return {
-        "cases": models.Cases.objects.all()
-    }
-
 def extra_fields(request):
     return {
         "extra_fields": {

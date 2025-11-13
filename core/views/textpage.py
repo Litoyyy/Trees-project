@@ -23,4 +23,10 @@ class IndexView(mixins.TextPageMixin, generic.TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+
+        context.update({
+            "partnership": models.Partnership.objects.all()[:6],
+            "cases": models.Cases.objects.all()[:6],
+        })
+
         return context
